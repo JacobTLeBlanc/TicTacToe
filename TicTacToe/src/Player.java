@@ -23,15 +23,15 @@ public class Player {
 	// pickSpot method
 	public int[] pickSpot() {
 		int[] spot = new int[2];
-		spot[0] = (int) Math.random() * 3;
-		spot[1] = (int) Math.random() * 3;
+		spot[0] = (int) (Math.random() * 3);
+		spot[1] = (int) (Math.random() * 3);
 		return spot;
 	}
 	
 	// randName method
 	public void randName() {
-		String[] names = {"Matt", "Brad", "Kaitlyn", "Brittany", "Jimmy"};
-		int rand = (int) Math.random() * 5;
+		String[] names = {"Matt", "Brad", "Kaitlyn", "Brittany", "Jimmy", "Tommy", "Ricky", "Hillbilly Joel"};
+		int rand = (int) (Math.random() * 8);
 		this.name = names[rand];
 	}
 	

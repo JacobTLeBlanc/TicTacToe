@@ -28,6 +28,13 @@ public class Player {
 		return spot;
 	}
 	
+	// randName method
+	public void randName() {
+		String[] names = {"Matt", "Brad", "Kaitlyn", "Brittany", "Jimmy"};
+		int rand = (int) Math.random() * 5;
+		this.name = names[rand];
+	}
+	
 	// toString method
 	public String toString() { return this.name + " on team: " + this.team; };
 	
